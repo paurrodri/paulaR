@@ -2,6 +2,8 @@
 
 export(count_how_many_na_per_column)
 export(count_rows_with_na)
+export(get_columns_with_all_na)
+export(get_columns_with_any_na)
 export(ia)
 export(ir)
 export(ra)
