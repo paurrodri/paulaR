@@ -15,20 +15,3 @@
 common_colnames <- function(data_1, data_2){
   colnames(data_1)[colnames(data_1) %in% colnames(data_2)]
 }
-
-different_colnames <- function(data_1, data_2){
-  colnames(data_1)[!colnames(data_1) %in% colnames(data_2)]
-}
-
-common_items <- function(list_1, list_2){
-  list_1[list_1 %in% list_2]
-}
-
-different_items <- function(list_1, list_2){
-  list_1[!list_1 %in% list_2]
-}
-
-common_rows <- function(data_1, data_2, colname_1, colname_2 = NULL){
-  colname_2 <- ifelse(is.null(colname_2), colname_1, colname_2)
-  data_1[[colname_1]][data_1[[colname_1]] %in% data_2[[colname_2]]]
-}
