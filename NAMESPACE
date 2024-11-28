@@ -3,6 +3,7 @@
 export(abbreviate_first_word)
 export(add_suffix_to_duplicates)
 export(add_zero_to_single_digits)
+export(calculate_sample_size)
 export(capitalize_first_letter)
 export(cbind_na)
 export(ceiling_signif)
