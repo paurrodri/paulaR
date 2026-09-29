@@ -8,7 +8,8 @@ white_theme(
   font_size = 10,
   line_size = 0.5,
   smaller_fraction = 0.8,
-  axis_margin_fraction = 0.25
+  axis_margin_fraction = 0.25,
+  font_family = "serif"
 )
 }
 \arguments{
@@ -19,6 +20,8 @@ white_theme(
 \item{smaller_fraction}{Numeric. Some texts (e.g. axes ticks) will be the given fraction of the font size smaller.}
 
 \item{axis_margin_fraction}{Numeric. Axis margin size will be calculated based on this fraction, the "smaller_fraction" and the font size.}
+
+\item{font_family}{Character. Font family for all text in the plot. Use \code{"serif"}, \code{"sans"} or \code{"mono"}, or the name of an installed font (e.g. \code{"Times New Roman"}). Default: \code{"serif"}.}
 }
 \value{
 plot (ggplot) with the theme
