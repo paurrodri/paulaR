@@ -7,6 +7,7 @@
 #' @param line_size Numeric. Default line size.
 #' @param smaller_fraction Numeric. Some texts (e.g. axes ticks) will be the given fraction of the font size smaller.
 #' @param axis_margin_fraction Numeric. Axis margin size will be calculated based on this fraction, the "smaller_fraction" and the font size.
+#' @param font_family Character. Font family for all text in the plot. Use `"serif"`, `"sans"` or `"mono"`, or the name of an installed font (e.g. `"Times New Roman"`). Default: `"serif"`.
 #'
 #' @examples
 #' \dontrun{
@@ -19,7 +20,8 @@ white_theme <- function(
     font_size = 10,
     line_size = 0.5,
     smaller_fraction = 0.8,
-    axis_margin_fraction = 0.25) {
+    axis_margin_fraction = 0.25,
+    font_family = "serif") {
 
   smaller_size <- font_size * smaller_fraction
   half_size    <- font_size * 0.5
@@ -34,7 +36,8 @@ white_theme <- function(
       linewidth = line_size
     ),
     text = ggplot2::element_text(
-      size = font_size),
+      size = font_size,
+      family = font_family),
     axis.line = ggplot2::element_line(
       linewidth = line_size
     ),
