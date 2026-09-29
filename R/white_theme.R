@@ -38,6 +38,8 @@ white_theme <- function(
     text = ggplot2::element_text(
       size = font_size,
       family = font_family),
+    geom = ggplot2::element_geom(
+      family = font_family),
     axis.line = ggplot2::element_line(
       linewidth = line_size
     ),
